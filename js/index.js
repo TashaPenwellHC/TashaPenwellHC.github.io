@@ -18,3 +18,12 @@
   keys.forEach(key => key.addEventListener('transitionend', removeTransition));
   window.addEventListener('keydown', playSound);
 
+$(function() {
+      $("div.key").bind("tap",handler);
+
+      function tapHandler(event) {
+          $(event.target).addClass("tap");
+      }
+  })
+
+
